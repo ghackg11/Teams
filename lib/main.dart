@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:teams/Views/bottom_bar_view.dart';
 import 'package:teams/Views/league_page.dart';
 
 import 'Views/home_page.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red
       ),
-      home:  HomePage(),
+      home:  BottomBarView(),
     );
   }
 }

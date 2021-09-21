@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:teams/Views/Components/live_matches_home_screen.dart';
 import 'package:teams/Views/league_page.dart';
 
 import 'Components/leagues_widget_home_screen.dart';
@@ -12,19 +13,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF222226),
-      drawer: Drawer(),
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        title: Center(
-          child: Text("Team"),
-        ),
-        actions: [Icon(Icons.search)],
-      ),
+
+
       body: Column(
         children: [
           // Text("Hello Players!"),
-          LeaguesWidgetHomeScreen()
+          LeaguesWidgetHomeScreen(),
+          LiveMatchesHomeScreen(),
+
         ],
       ),
     );
