@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:teams/Views/league_page.dart';
 
 import 'Views/home_page.dart';
 
@@ -16,8 +17,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        primarySwatch: Colors.red
       ),
-      home: const HomePage(),
+      home:  LeaguePage(),
     );
   }
 }
