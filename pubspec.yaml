@@ -37,6 +37,7 @@ dependencies:
   get: ^4.3.8
   font_awesome_flutter: ^9.1.0
   google_fonts:
+  intl:
 
 
 dev_dependencies:

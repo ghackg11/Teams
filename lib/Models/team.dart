@@ -1,6 +1,7 @@
 class Team{
 
   String teamName;
-  Team(this.teamName);
+  String image;
+  Team(this.teamName, this.image);
 
 }
