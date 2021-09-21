@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:teams/Views/league_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -31,44 +32,6 @@ class HomePage extends StatelessWidget {
                 height: MediaQuery.of(context).size.height / 4,
                 width: MediaQuery.of(context).size.width,
 
-                /* child: Column(
-                  children: [
-                    Center(
-                      child: new Container(
-                        height: MediaQuery.of(context).size.height/6,
-                        child: new Row(
-                          children: <Widget>[
-                            new Flexible(
-                              child: new CustomScrollView(
-                                shrinkWrap: true,
-                                scrollDirection: Axis.horizontal,
-                                slivers: <Widget>[
-                                  new SliverPadding(
-                                    padding: const EdgeInsets.all(20.0),
-                                    sliver: new SliverList(
-                                      delegate: new SliverChildListDelegate(
-                                        <Widget>[
-                                          const Text('Leagues', style: TextStyle(fontSize: 30, color: Colors.white), ),
-                                          const Text('is'),
-                                          const Text('scroll'),
-                                          const Text('view'),
-                                          const Text('inside'),
-                                          const Text('list'),
-                                          const Text('view'),
-                                          const Text('in'),
-                                          const Text('horizontal'),
-                                          const Text('direction')
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),*/
 
                 child: Padding(
                   padding: const EdgeInsets.only(left: 12.0),
@@ -82,7 +45,7 @@ class HomePage extends StatelessWidget {
                             Align(child: Text("Leagues", style: TextStyle(color: Colors.white, fontSize: 20),), alignment: Alignment.centerLeft,),
                             Expanded(child: Align(child: Padding(
                               padding: const EdgeInsets.only(right: 8.0),
-                              child: TextButton(onPressed: (){}, child: Text("VIEW ALL", style: TextStyle(color: Colors.grey),)),
+                              child: TextButton(onPressed: (){Get.to(LeaguePage());}, child: Text("VIEW ALL", style: TextStyle(color: Colors.grey),)),
                             ), alignment: Alignment.centerRight,)),
                           ],
                         ),
@@ -257,15 +220,6 @@ class HomePage extends StatelessWidget {
               ))
         ],
       ),
-
-      /*Text(
-                  "GeeksForGeeks : Learn Anything, Anywhere",
-                  style: TextStyle(
-                    color: Colors.green,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 30.0,
-                  ),
-                ),*/
     );
   }
 }
